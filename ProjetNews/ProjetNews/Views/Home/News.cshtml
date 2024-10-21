@@ -1,0 +1,29 @@
+﻿
+
+@model List<News>
+@foreach(var item in Model)
+{
+    
+
+<div class="container aos-init aos-animate" data-aos="fade-up">
+
+    
+        
+    
+    <div class="row">
+          <div class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+            <img src="~/assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+            <h3>@item.Title</h3>
+            <p class="fst-italic">
+             @item.Topic
+            </p>
+
+           
+
+          </div>
+        </div>
+    
+      </div>
+}
